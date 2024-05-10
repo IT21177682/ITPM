@@ -116,8 +116,8 @@ function App() {
 
             {/* --------------------------------------------Forecast start -------------------------------------------------*/}
             <Route path="Forecast" >
-              {/* <Route index element={<RequireAuth> <ForecastList userId={currentUser ? currentUser.uid : null} /> </RequireAuth>} /> */}
-              <Route index element={<RequireAuth> <Trendoptimize userId={currentUser ? currentUser.uid : null} /> </RequireAuth>} />
+              <Route index element={<RequireAuth> <ForecastList userId={currentUser ? currentUser.uid : null} /> </RequireAuth>} /> 
+              {/* <Route index element={<RequireAuth> <Trendoptimize userId={currentUser ? currentUser.uid : null} /> </RequireAuth>} /> */}
               <Route path="ForecastNew" element={<RequireAuth> <Forecast_New userId={currentUser ? currentUser.uid : null} /> </RequireAuth>} />
 
             </Route>
